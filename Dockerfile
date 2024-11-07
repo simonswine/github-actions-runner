@@ -17,6 +17,7 @@ ADD entrypoint.sh /home/runner/
 RUN chmod +x /home/runner/entrypoint.sh
 
 USER ${USER}
+ENV USER=${USER}
 WORKDIR ${WORKDIR}
 
 ENTRYPOINT [ "/home/runner/entrypoint.sh" ]
