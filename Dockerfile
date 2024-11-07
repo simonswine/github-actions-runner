@@ -3,7 +3,7 @@ ARG VERSION="2.320.0"
 FROM ghcr.io/actions/actions-runner:${VERSION}
 
 # Tools that are useful during Github action runs
-ARG TOOLS="bzip2 unzip git coreutils psmisc jq curl"
+ARG TOOLS="bzip2 unzip git coreutils psmisc jq curl xz-utils"
 ENV WORKDIR="/home/runner"
 ARG USER="runner"
 
