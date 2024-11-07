@@ -2,11 +2,11 @@ version: '3.6'
 
 services:
   github-runner:
-    image: ghcr.io/stonemaster/github-actions-runner:main
+    image: ghcr.io/simonswine/github-actions-runner:main
     container_name: githubrunner
     restart: always
     environment:
-      - GITHUB_REPO_URL=https://github.com/stonemaster/github-actions-runner
+      - GITHUB_REPO_URL=https://github.com/simonswine/github-actions-runner
       - RUNNER_TOKEN=
       # echo Hello World
       - PRE_JOB_SCRIPT=ZWNobyBIZWxsbyBXb3JsZAo=

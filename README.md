@@ -14,11 +14,11 @@ version: '3.6'
 
 services:
   github-runner:
-    image: ghcr.io/stonemaster/github-actions-runner:main
+    image: ghcr.io/simonswine/github-actions-runner:main
     container_name: githubrunner
     restart: always
     environment:
-      - GITHUB_REPO_URL=https://github.com/stonemaster/github-actions-runner
+      - GITHUB_REPO_URL=https://github.com/simonswine/github-actions-runner
       - RUNNER_TOKEN=
 ```
 
@@ -26,7 +26,7 @@ services:
 
 ### `GITHUB_REPO_URL` (required)
 
-*Example*: `https://github.com/stonemaster/github-actions-runner`
+*Example*: `https://github.com/simonswine/github-actions-runner`
 
 The *https* URL of the GitHub repository.
 
