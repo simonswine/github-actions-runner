@@ -6,6 +6,7 @@ on:
   schedule:
     # Trigger every Sunday to update image from upstream automatically
     - cron: "0 0 * * 0"
+  workflow_dispatch: {}
 
 env:
   REGISTRY: ghcr.io
